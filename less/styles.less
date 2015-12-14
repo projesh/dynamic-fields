@@ -1,0 +1,97 @@
+/*!
+ * Dynamic Fields
+ *
+ * Author: projesh sindurakar
+ * Email: chkprojesh@gmail.com
+ * 
+ * Date: 2015-12-14
+ */
+
+@border: 1px blue solid;
+@dragWrap: 200px;
+
+section#dynamicFields {
+
+	#c {
+		position: relative;
+		white-space: nowrap;
+
+		.row {
+			margin-bottom: 10px;
+			white-space: nowrap;
+			vertical-align: top;
+			// outline: 1px gray dashed;
+			.ac{
+				position: absolute;
+			}
+
+			.col {
+				display: table-cell;
+				min-width: 240px;
+				vertical-align: top;
+				width: 220px;
+			}
+
+
+		}
+
+		.mainbtn{
+			div
+			{
+				display: inline-block;
+				margin-right: 10px;
+			}
+			#ap {
+				position: fixed;
+				top: 8px;
+				right: 8px;
+			}
+		}
+
+		.h {
+
+			.col > .w {
+				position: relative;
+				& > .i {
+					display: inline-block;
+					width: @dragWrap;
+				}
+				button {
+					position: absolute;
+					top: -1px;
+				}
+			}
+		}
+
+		.c {
+			// outline: 1px red solid;
+			.col{
+				// outline:1px blue solid;
+				.wrap {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+#c .ui-wrapper {
+    margin: 0!important;
+    padding: 0!important;
+    height: auto!important;
+    display: inline-block;
+}
+
+.resizable,
+#c {
+    padding: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+.ui-resizable-se {
+    cursor: se-resize;
+    width: 12px;
+    height: 12px;
+    // right: 5px;
+    // bottom: 14px;
+}
